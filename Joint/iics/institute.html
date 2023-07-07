@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	body
+	{
+		margin:0px;
+		font-family:arial;
+	}
+	.header
+	{
+		background-color:#eee;
+		padding:15px 10px;
+		overflow:hidden;
+	}
+	.header a
+	{
+		float:left;
+		color:black;
+		text-decoration:none;
+		font-size:18px;
+		padding:15px 26px;
+		border-radius:35px;
+	}
+	.header a.logo
+	{
+		background-image:url("iicsindia logo.png");
+		padding:50px 110px;
+		background-repeat:no-repeat;
+		/*margin-left:52px;*/
+	}
+	.header-right
+	{
+		float:right;
+	}
+	.header a:hover:not(.logo)
+	{
+		background-color:#ddd;
+		color:black;
+	}
+	.header a.active
+	{
+		background-color:orange;
+	}
+
+	@media screen and (max-width:500px)
+	{
+		.header a
+		{
+			float:none;
+			display:block;
+			text-align:center;
+			font-size:21px;
+		}
+		.header-right
+		{
+			float:none;
+		}
+		.logo
+		{
+			margin-left:140px;
+		}
+	}
+</style>
+<body>
+
+	<div class="header">
+		<a href="" class="logo"></a>
+		<div class="header-right">
+			<a href="" class="active">Home</a>
+			<a href="">About us</a>
+			<a href="">Contact</a>
+			<a href="">Gallery</a>
+		</div>
+	</div>
+
+</body>
+</html>
